@@ -9,18 +9,6 @@ export default function GallerySection() {
       endpoint="gallery"
       fields={[
         {
-          name: 'title',
-          label: 'Image Title',
-          type: 'text',
-          required: true,
-        },
-        {
-          name: 'description',
-          label: 'Description',
-          type: 'textarea',
-          required: false,
-        },
-        {
           name: 'category',
           label: 'Category',
           type: 'select',

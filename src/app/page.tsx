@@ -259,10 +259,10 @@ export default function Home() {
             <motion.div
               key={index}
               variants={fadeIn}
-              className="group relative aspect-square rounded-2xl overflow-hidden cursor-pointer"
+              className="group relative aspect-square overflow-hidden cursor-pointer"
               onClick={() => setSelectedImage(img.src)}
             >
-              <div className="relative h-72 overflow-hidden">
+              <div className="relative h-72 overflow-hidden rounded-2xl ">
                 <Image
                   src={img.src}
                   alt={img.alt}

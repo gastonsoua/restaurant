@@ -27,9 +27,9 @@ router.get('/:id', async (req, res) => {
 
 // POST new gallery item
 router.post('/', async (req, res) => {
+  console.log(req.body);
+  console.log('req.body');
   const galleryItem = new Gallery({
-    title: req.body.title,
-    description: req.body.description,
     image: req.body.image,
     order: req.body.order,
     isActive: req.body.isActive
